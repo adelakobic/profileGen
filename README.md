@@ -45,7 +45,9 @@ Actual generated HTML example:
 * geting 
 
 ## Changes made to the code 𝌡
-* the 
+* Folders and base files created
+* Classes created for Employee (parent file) then linked to Intern, Engineer and Manager files
+* Begining to write the tests for Employee, Intern, Engineer and Manager 4/9/22
 
 ## Link to the deployed website 💻
 No delpoyed website for this assignment sample HTML file generated will be available as part of the submission
