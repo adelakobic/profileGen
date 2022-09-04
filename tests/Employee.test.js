@@ -4,9 +4,9 @@ describe("Employee", () => {
     describe("Initialization", () => {
         it("should test the profile contruction", () => {
             const id = 1; 
-            const name = "Adela";
+            const name = "Anthony";
             const role = "Employee";
-            const email = "adela@email.com";
+            const email = "anthony@email.com";
 
             const obj = new Employee(id, name, email);
 

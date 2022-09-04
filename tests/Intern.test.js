@@ -4,9 +4,9 @@ describe("Intern", () => {
     describe("Initialization", () => {
         it("should test the profile construction", () => {
             const id = 1;
-            const name = "Adela";
+            const name = "Colin";
             const role = "Intern";
-            const email = "adela@email.com";
+            const email = "colin@email.com";
             const school = "Birmingham University";
 
             const obj = new Intern(id, name, email, school);

@@ -42,7 +42,7 @@ Actual generated HTML example:
 ![ProfileGen in action]()
 
 ## Problems encountered 🤯
-* geting 
+* tried testing the 'Employee Test' but error comes back 'no test specified' and 'line 1: exit: too many arguments' 4/9/22
 
 ## Changes made to the code 𝌡
 * Folders and base files created
