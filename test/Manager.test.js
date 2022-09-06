@@ -11,11 +11,11 @@ describe("Manager", () => {
 
             const obj = new Manager(id, name, email, officenumber);
 
-            expect(obj.getID()).toEqual(id);
-            expect(obj.getID()).toEqual(name);
-            expect(obj.getID()).toEqual(role);
-            expect(obj.getID()).toEqual(email);
-            expect(obj.getID()).toEqual(officenumber);
+            expect(obj.getId()).toEqual(id);
+            expect(obj.getName()).toEqual(name);
+            expect(obj.getRole()).toEqual(role);
+            expect(obj.getEmail()).toEqual(email);
+            expect(obj.getOfficenumber()).toEqual(officenumber);
         });
     });
 });

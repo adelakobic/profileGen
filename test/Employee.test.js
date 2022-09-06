@@ -11,9 +11,9 @@ describe("Employee", () => {
             const obj = new Employee(id, name, email);
 
             expect(obj.getId()).toEqual(id);
-            expect(obj.getId()).toEqual(name);
-            expect(obj.getId()).toEqual(role);
-            expect(obj.getId()).toEqual(email);
+            expect(obj.getName()).toEqual(name);
+            expect(obj.getRole()).toEqual(role);
+            expect(obj.getEmail()).toEqual(email);
         });
     });
 });

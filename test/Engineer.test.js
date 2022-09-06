@@ -11,11 +11,11 @@ describe("Engineer", () => {
 
             const obj = new Engineer(id, name, email, github);
 
-            expect(obj.getID()).toEqual(id);
-            expect(obj.getID()).toEqual(name);
-            expect(obj.getID()).toEqual(role);
-            expect(obj.getID()).toEqual(email);
-            expect(obj.getID()).toEqual(github);
+            expect(obj.getId()).toEqual(id);
+            expect(obj.getName()).toEqual(name);
+            expect(obj.getRole()).toEqual(role);
+            expect(obj.getEmail()).toEqual(email);
+            expect(obj.getGithub()).toEqual(github);
         });
     });
 });

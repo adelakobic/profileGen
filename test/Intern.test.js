@@ -12,10 +12,10 @@ describe("Intern", () => {
             const obj = new Intern(id, name, email, school);
 
             expect(obj.getId()).toEqual(id);
-            expect(obj.getId()).toEqual(name);
-            expect(obj.getId()).toEqual(role);
-            expect(obj.getId()).toEqual(email);
-            expect(obj.getId()).toEqual(school);
+            expect(obj.getName()).toEqual(name);
+            expect(obj.getRole()).toEqual(role);
+            expect(obj.getEmail()).toEqual(email);
+            expect(obj.getSchool()).toEqual(school);
         });
     });
 });
