@@ -12,11 +12,35 @@
         <h1>🧑‍🤝‍🧑 My Team 🧑‍🤝‍🧑 powered by ProfileGen</h1>
     </header>
     <main>
-        <div class="profiles">
+        <div class="jumbotron jumbotron fluid">
+            <div class="profiles">
+            <div class="container">
             <!--Managers Section-->
+            <card>
+                <h2>${data.name}</h2>
+                <h3>📋 Manager</h3>
+                <p>ID: ${data.id}</p>
+                <p>Email: ${data.email}</p>
+                <p>Office number: ${data.telephone}</p>
+            </card>
+
             <!--Engineers Section-->
-            <!--Employees Section-->
+            <card>
+                <h2>${data.name}</h2>
+                <h3>🛠 Engineer</h3>
+                <p>ID: ${data.id}</p>
+                <p>Email: ${data.email}</p>
+                <p>GitHub: ${data.github}</p>
+            </card>
+        
             <!--Interns Section-->
+            <card>
+                <h2>${data.name}</h2>
+                <h3>📚 Intern</h3>
+                <p>ID: ${data.id}</p>
+                <p>Email: ${data.email}</p>
+                <p>School: ${data.school}</p>
+            </card>
         </div>
     </main>
     <footer>ProfileGen code has been created by Adela Kobic</footer>

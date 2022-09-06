@@ -13,6 +13,7 @@ const ManagerQuestions = [
         type: 'input',
         name: 'id',
         message: 'Please enter employee ID:',
+        default: 'MAN-2022-',
     },
     {
         type: 'input',
@@ -36,6 +37,7 @@ const EngineerQuestions = [
         type: 'input',
         name: 'id',
         message: 'Please enter employee ID:',
+        default: 'ENG-2022-',
     },
     {
         type: 'input',
@@ -59,6 +61,7 @@ const InternQuestions = [
         type: 'input',
         name: 'id',
         message: 'Please enter Intern ID:',
+        default: 'INT-2022-',
     },
     {
         type: 'input',
