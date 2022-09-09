@@ -1,38 +1,48 @@
 const inquirer = require('inquirer');
-const jest = require('jest');
 const fs = require('fs');
-const gernerateHtml = require('./dist/generateHtml') //path
+const jest = require('jest');
+
+// link to questions to run in terminal
+const {
+    MainMenu,
+    ManagerQuestions,
+    EngineerQuestions,
+    InternQuestions
+} = require('./src/questions');
+
+const gernerateHtml = require('./src/generateHtml'); //path
 // gernerated will be in dist folder 
 
-// questions for the terminal
-const mainMenu = [
-    {
-        type: 'list',
-        name: 'option',
-        message: 'What would you like to add?',
-        choices: ['Add a Manager', 'Add an Engineer', 'Add an Intern', 'Build a Team',],
-    },
-]
+let employees = [];
 
-const ManagerQuestions = [
-    {
-        type: 'input',
-        name: 'id',
-        message: 'What is your employee ID?',
-    },
-    {
-        type: 'input',
-        name: 'name',
-        message: 'Please enter your name:',
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'Please enter your email address:',
-    },
-    {
-        type: 'input',
-        name: 'telephone',
-        message: 'Enter your Office number:',
-    }
-]
+// start the questions
+function menu () {
+    inquirer.prompt(MainMenu)
+    .then(answers=> {
+        //if statement to send them to manager etc
+    });
+}
+
+function addManager () {
+    inquirer.prompt(ManagerQuestions)
+    .then(answers=> {
+        console.log(answers)
+        let manager = new Manger(answers.id, answers.name, answers.email, answers.telephone);
+        employees.push(manager);
+        menu();
+    });
+}
+
+function addEngineer(){}
+
+function addIntern(){}
+
+function buildHTML() {
+    //use FS here!
+}
+
+inquirer.prompt(EngineerQuestions).then(answers=> console.log(answers))
+inquirer.prompt(InternQuestions).then(answers=> console.log(answers))
+
+
+
