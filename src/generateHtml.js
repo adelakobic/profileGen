@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 function generateTeam (data) {
 
     function generateManager (manager) {
@@ -11,23 +13,53 @@ function generateTeam (data) {
     `
     }
 
-
-    const HTML = [];
-
-    // filter through data to find the employee type
-    // then map through the data to fill in the template
-    // push new template HTML to HTML array
-    // join html items together (.join(''))
+    const HTML = [];  // where array of employees should go
     
     let newManager = data.filter(employee => employee.getRole() === "Manager")
         .map(manager => generateManager(manager))
         .join('')
 
         HTML.push(newManager)
+        // .filter, .map, .push, .join
+    return HTML.join('');
 
-    // .filter, .map, .push, .join
+    function generateEngineer (engineer) {
+        return `<div class="card">
+        <h2>${engineer.name}</h2>
+        <h3>🛠 Engineer</h3>
+        <p>ID: ${engineer.id}</p>
+        <p>Email: ${engineer.email}</p>
+        <p>GitHub: ${engineer.github}</p>
+    </div>
+    `
+    };
+    
+    let newEngineer = data.filter(employee => employee.getRole() === "Engineer")
+        .map(engineer => generateEngineer(engineer))
+        .join('')
+
+        HTML.push(newEngineer)
 
     return HTML.join('');
+
+    function generateIntern (intern) {
+        return ` <div>
+        <h2>${intern.name}</h2>
+        <h3>📚 Intern</h3>
+        <p>ID: ${intern.id}</p>
+        <p>Email: ${intern.email}</p>
+        <p>School: ${intern.school}</p>
+    </div>
+    `
+    };
+
+    let newIntern = data.filter(employee => employee.getRole() === "Intern")
+        .map(intern => generateIntern(intern))
+        .join('')
+
+        HTML.push(newIntern)
+    
+        return HTML.join('');
 }
 
 
