@@ -13,7 +13,7 @@ function generateTeam (data) {
     `
     }
 
-    const HTML = [];  // where array of employees should go
+    const HTML = [newManager, newEngineer, newIntern];  // where array of employees should go
     
     let newManager = data.filter(employee => employee.getRole() === "Manager")
         .map(manager => generateManager(manager))
