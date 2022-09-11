@@ -43,6 +43,12 @@ Actual generated HTML example:
 
 ## Problems encountered 🤯
 * tried testing the 'Employee Test' but error comes back 'no test specified' and 'line 1: exit: too many arguments' 4/9/22
+* managed to test the Tests and successful - 6/9/22
+* couldn't generate the questions to appear in the Terminal 9/9/22
+* changed the version of inquirer in the package JSON file and the questions now appear in the terminal 9/9/22
+* the questions are appearing in on long array in the terminal so you cannot answer them individually as requested 10/9/22
+* the HTML document isnt generating at all 11/9/22
+* tried to ammend code but the questions all come at omce rather than individually 11/9.22
 
 ## Changes made to the code 𝌡
 * Folders and base files created

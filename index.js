@@ -11,6 +11,7 @@ const {
 } = require('./src/questions');
 
 const gernerateHtml = require('./src/generateHtml'); //path
+const { inherits } = require('util');
 // gernerated will be in dist folder 
 
 let employees = [];
@@ -21,13 +22,13 @@ function menu () {
     .then(answers => {
         //if statement to send them to manager etc
         if (response == addManager) {
-            return ManagerQuestions;
+            console.log(ManagerQuestions);
 
         }   else if (response == addEngineer) {
-            return EngineerQuestions;
+            console.log(EngineerQuestions);
 
         }   else (response == addIntern); {
-            return InternQuestions;
+            console.log(InternQuestions);
         }
     
     });
@@ -75,6 +76,4 @@ inquirer.prompt(MainMenu).then(answers=> console.log(answers))
 inquirer.prompt(ManagerQuestions).then(answers=> console.log(answers))
 inquirer.prompt(EngineerQuestions).then(answers=> console.log(answers))
 inquirer.prompt(InternQuestions).then(answers=> console.log(answers))
-
-
 
